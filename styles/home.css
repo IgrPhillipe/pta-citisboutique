@@ -1,0 +1,95 @@
+:root {
+    --bege: #B7AB9D;
+    --preto: #35363A;
+    --rose: #c5b4aa;
+    --rose-hover: #b6a59c;
+    --cinza: #E7E9E6;
+    --bege-hover: #A09589;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+#home {
+    height: 100vh;
+    background: url(/images/background.png);
+    background-size: cover;
+    background-position: 15% 5%;
+    background-repeat: no-repeat cover;
+}
+
+#home header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home header img {
+    width: 7rem;
+    margin: 2.1rem;
+    left: 0;
+}
+
+#home .content {
+    position: absolute;
+    text-align: justify;
+    bottom: 2rem;
+    right: 0;
+    width: 10rem;
+    margin: 2rem;
+}
+
+#home .content p {
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.87rem;
+    line-height: 1.6;
+    color: var(--cinza);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background: var(--cinza);
+}
+
+footer p {
+    font-size: 0.87rem;
+}
+
+@media (min-width: 1024px) {
+    #home {
+        height: 90vh;
+    }
+    #home header img {
+        width: 12rem;
+        margin: 2.1rem;
+        left: 0;
+    }
+    #home .content {
+        bottom: 5rem;
+        right: 6rem;
+        width: 17rem;
+    }
+    #home .content p {
+        font-size: 3rem;
+    }
+    footer>div {
+        position: absolute;
+        margin-right: 4rem;
+        right: 0;
+    }
+    footer>div p {
+        font-size: 1rem;
+    }
+}

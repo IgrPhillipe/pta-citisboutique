@@ -1,0 +1,111 @@
+#products {
+    height: 165vh;
+    background: var(--preto);
+}
+
+#products .content {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#products .content .product {
+    align-items: center;
+}
+
+#products .title h1 {
+    color: var(--bege);
+    font-size: 2.18rem;
+    font-weight: 600;
+    margin-top: 3.7rem;
+    margin-bottom: 1.7rem;
+}
+
+#products .content .product .single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#products .content .product .single .name {
+    position: absolute;
+    color: var(--preto);
+    text-align: center;
+    margin-bottom: 13.75rem;
+}
+
+#products .content .product .single .name h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#products .content .product .single img {
+    height: 14rem;
+    width: 11.4rem;
+    margin-top: -1rem;
+}
+
+#products .content .product img {
+    background: var(--cinza);
+}
+
+#products .content .product .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--rose);
+    border-color: var(--rose-hover);
+    border-style: solid;
+    border-width: 0.12rem;
+    padding: 0.6rem 1.5rem;
+    transition: 0.4s;
+    margin-top: -1.5rem;
+}
+
+#products .content .product .button:hover {
+    background: var(--rose-hover);
+}
+
+#products .content .product .button h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media(min-width: 1024px) {
+    #products {
+        height: 100vh;
+        background: var(--preto);
+    }
+    #products .content .product {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #products .title h1 {
+        font-size: 3rem;
+    }
+    #products .content .product .single {
+        margin: 2rem;
+    }
+    #products .content .product .single .name {
+        margin-bottom: 17rem;
+    }
+    #products .content .product .single .name h3 {
+        font-size: 1.2rem;
+    }
+    #products .content .product .single img {
+        height: 18rem;
+        width: 14.8rem;
+        margin-top: -1rem;
+    }
+    #products .content .product .button h3 {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+}
